@@ -1,0 +1,31 @@
+.locales {
+  display: flex;
+  align-items: baseline;
+}
+
+#locale-select {
+  height: 24px;
+  margin-left: 1em;
+}
+
+.date__list {
+  margin: 16px;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-gap: 4px;
+}
+
+.date__item {
+  display: grid;
+  grid-template-columns: 0 1fr;
+  grid-gap: 1.75em;
+  align-items: start;
+  font-size: 1.5rem;
+  line-height: 1.25;
+
+  &::before {
+    content: attr(data-icon);
+    font-size: 1.25em;
+  }
+}
